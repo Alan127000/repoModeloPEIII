@@ -1,0 +1,36 @@
+CREATE TABLE Usuario (
+  idUsuario    int4 NOT NULL AUTO_INCREMENT, 
+  nomeUsuario  char(255), 
+  emailUsuario char(255), 
+  cpfUsuario   char(255), 
+  senhaUsuario char(255), 
+  PRIMARY KEY (idUsuario));
+CREATE TABLE Postagem (
+  idPostagem        int4 NOT NULL AUTO_INCREMENT, 
+  tituloPostagem    char(255), 
+  descricaoPostagem char(255), 
+  fotoPostagem      longblob, 
+  UsuarioidUsuario  int4 NOT NULL, 
+  PRIMARY KEY (idPostagem));
+ALTER TABLE Postagem ADD CONSTRAINT FKPostagem863135 FOREIGN KEY (UsuarioidUsuario) REFERENCES Usuario (idUsuario);
+
+insert into usuario(nomeUsuario, emailUsuario, cpfUsuario, senhaUsuario) 
+VALUES ('Alan', 'alan@gmail.com', '111.222.333.44', 'Alan123');
+
+insert into usuario(nomeUsuario, emailUsuario, cpfUsuario, senhaUsuario) 
+VALUES ('Alex', 'alex@gmail.com', '111.222.333.44', 'Alex123');
+
+insert into usuario(nomeUsuario, emailUsuario, cpfUsuario, senhaUsuario) 
+VALUES ('Aladin', 'aladin@gmail.com', '111.222.333.44', 'Aladin123');
+
+insert into postagem(tituloPostagem, descricaoPostagem, UsuarioidUsuario)
+VALUES ('Churrascada', 'Venha comer churrasco gaucho', 1);
+
+insert into postagem(tituloPostagem, descricaoPostagem, UsuarioidUsuario)
+VALUES ('Pizzaiada', 'Venha comer pizza deliciosa', 2);
+
+insert into postagem(tituloPostagem, descricaoPostagem, UsuarioidUsuario)
+VALUES ('Hamburguerada', 'Venha comer hamburguer quentinho', 3);
+
+Select * from USUARIO;
+Select * from POSTAGEM;

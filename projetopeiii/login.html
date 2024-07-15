@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Projeto PEIII ALAN</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-plot-listing.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+<!--
+
+
+-->
+  </head>
+
+<body>
+
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="listagem.html">Listagem</a></li>
+              <li><a href="cadastro.html">Cadastro</a></li>
+              <li><a href="contato.html">Fale Conosco</a></li> 
+              <li><div class="main-white-button"><a href="login.html"><i class="fa fa-plus"></i>Login</a></div></li> 
+            </ul>        
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <div class="page-heading">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="top-text header-text">
+            <h2>Faça o seu Login!</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="category-post">
+    <div class="container">
+      <div class="row">
+        <div class="container_form">
+
+
+          <form class="form" action="#" method="post">
+
+              <div class="form_grupo">
+                  <label for="e-mail" class="form_label">Email</label>
+                  <input type="email" name="email" class="form_input" id="email" placeholder="seuemail@email.com" required>
+              </div>
+
+              <div class="form_grupo">
+                <label for="senha" class="form_label">Senha</label>
+                <input type="char" name="senha" class="form_input" id="senha" placeholder="Digite sua senha" required>
+            </div> 
+                  <div class="submit">
+
+                    <input type="hidden" name="acao" value="enviar">
+                    <button type="submit" name="Submit" class="submit_btn" >Entrar</button>
+                  
+                  </div>
+          </form>
+
+      <style type="text/css">
+          .container_form {
+
+            width: 700px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            background:#ffffff; 
+            box-shadow: 1px 0px 1.2px 0px #e3e3e3; 
+            border-radius:3px; 
+            padding:1em;
+        
+        }
+        
+        .container_form h1 {
+            
+            font-family:'open_sansregular';
+            font-size: 2.3em;
+            color: #000000;
+            border-bottom: 1px #f0eded solid;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+        
+        }
+        
+        .form_grupo {
+            width: 90%;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        
+        .form_grupo .legenda { 
+        
+            width: 100%;
+            float: left;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        
+        /* SUBMIT */
+        
+        .submit { width:100%; float:left; }
+        
+        .submit_btn {
+        
+            float: left;
+            display: block;
+            padding: 5px 30px;
+            border: none;
+            outline: none;
+            background-color: #969696;
+            color: #000000;
+            font-family: inherit;
+            font-size: 25px;
+            font-family:'open_sansregular';
+            border-radius: 6px;
+            margin: 20px auto;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .submit_btn:hover {
+        
+            background-color: #444444;
+            transform: scale(1.03);
+        
+        }
+        
+        .form_new_input {
+            display: none;
+        }
+        
+        .form_new_input:checked ~ .radio_label .radio_new_btn::after,
+        .form_new_input:checked ~ .check_label .check_new_btn::after {
+         
+            visibility: visible;
+        }
+        
+        .form_new_input:checked ~ .radio_label,
+        .form_new_input:checked ~ .check_label {
+            color: #6fcffb;
+        }
+        
+        
+        .form_grupo {
+        
+            width: 100%;
+            margin-bottom: 20px;
+            position: relative;
+        
+        }
+        
+        .form_input {
+        
+            font-size: 16px;
+            font-family: inherit;
+            padding: 8px 15px;
+            border-radius: 4px;
+            border: 1px #f2f2f2 solid;
+            background: #fdfdfd;
+            outline: none;
+            width: 100%;
+            transition: all 0.3s;
+        
+        }
+        
+        .form_message,
+        .form_message .message_input {
+        
+            width: 100%;
+            float:left;
+        
+        }
+        
+        .form_message_label {
+        
+            width: 100%;
+            float: left;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            font-weight: bold;
+            
+        }
+      </style>
+
+  </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      
+      <div class="row">       
+        <div class="col-lg-12">
+          <div class="sub-footer">
+            <p>Copyright © 2024 Alan Antonio Bonetti
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>
